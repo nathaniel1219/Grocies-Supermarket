@@ -9,70 +9,284 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-}
-
-.head{
-    background-color: #001F3F;
-    display: flex;
-    justify-content: center;
-}
-.head a{
-    text-decoration: none;
     text-align: center;
-    font-size:  20px;
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
-    margin: 20px;
-    transition: transform 0.5s ease;
 }
-.head a:hover{
-    transform: scale(1.05);
+body{
+    background-color: #f2f2f2;
 }
+.head{
+    display: flex;
+    background-color:#001F3F;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky ;
+    top: 0;
+}
+    .logo{
+        height: 100%;
+        text-decoration: none;
+        margin: 20px;
+        text-align: center;
+        font-size:  20px;
+        font-family: "Bungee Spice", sans-serif;
+        font-weight: 400;
+        transition: transform 0.5s ease;
+    }
+        .logo:hover{
+            transform: scale(1.05);
+        }
+    nav{
+        margin: 0;
+        display: flex;
+        justify-content:space-around ;
+        align-items:center;
+        background-color: #001F3F;
+        z-index: 9999;
+    }
+    .navigation_links{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .navigation_links a{
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        height: 100%;
+        padding: 0px 20px;
+        transition: transform 0.5s ease;
+    }
+        .navigation_links a:hover{
+            transform: scale(1.15);
+            color: rgb(217, 134, 1);
+        }
+        #sign_in:hover{
+            color: red;
+        }
+    #Sidebar_Active, .open_sidebar, .close_sidebar{
+        display:none;
+    }
+    .mini-nav {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        padding: 10px;
+    }
+    .mini-nav a {
+        color: #000;
+        text-decoration: none;
+        padding: 0px 15px;
+    }
+    .mini-nav a:hover {
+        color: white;
+        background-color: #001F3F;
+        border-radius: 10px;
+        transition: 0.4s ease;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        padding: 15px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index:1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+    .bottom_feet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        color: white;
+        background-color: #001F3F;
+    }
+    
+    @media (max-width: 750px){
+
+        .navigation_links{
+            display: none;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #001F3F;
+            z-index: 9999;
+        }
+        .navigation_links a{
+            box-sizing: border-box;
+            height: auto;
+            width: 100%;
+            padding: 10px;
+            z-index: 9999;
+        }
+        .open_sidebar, .close_sidebar{
+            display: block;
+            padding: 10px;
+        }
+        #Sidebar_Active:checked ~ .navigation_links {
+            display: flex;
+            position:fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 60%; 
+            background-color: #001F3F;
+            z-index: 3;
+        }
+    }
+
+
+
+
+
+
+
+
 
 .Description {
     text-align: center;
     color: #001F3F;
     padding: 0px 10px;
-}
-
-
-
-
-
-
-.premium {
-    color: orangered;
-}
-
-form{
-    margin: 10px;
-    text-align: center;
-}
-fieldset{
-    margin: 60px;
-    border:2px solid ;
+    background-color: white;
+    margin: 30px;
+    padding: 10px;
     border-radius: 10px;
 }
-.textbox{
-    width: 80%;
-    border: none;
-    text-align: center;
-    background-color: #f6f6f6;
-    padding: 2%;
-    color: white;
-}
-.blocks{
+.loyalty{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
     margin: 30px;
+    border-radius: 10px;
 }
-.premiump:hover::before {
-    content: "Please Contact Administrator To Unlock exclusive perks!";
-    display: block;
-    position: absolute;
-    background-color: orangered;
+.membership{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    width: 200px;
+    padding: 10px 40px;
+    background-color: #001F3F;
     color: white;
-    padding: 5px;
-    border-radius: 5px;
-    margin-top: -30px;
+    border-radius: 10px;
+}
+
+.membership hr, .membership li, .membership a{
+    margin: 10px;
+    color: white;
+}
+.reg{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition: transform 0.5s;
+    padding: 10px;
+}
+.reg:hover{
+    transform: scale(1.1);
+    color: orangered;
+}
+.membership a:hover{
+    color: red;
+    transition: 0.2s;
+}
+
+.f{
+    background-color: white;
+    color: white;
+    margin: 30px;
+    border-radius: 10px;
+}
+.form{
+    background-color: #001F3F;
+    margin: 20px;
+    border-radius: 10px;
+}
+.box{
+    margin: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+.col1 div, .col2 div{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    
+}
+label, option{
+    text-align: left;
+    background-color: #001F3F;
+    margin-bottom: 5px;
+}
+.tbox, select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;  
+    background-color: transparent;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);/* To change the color of the calendar icon */
+} 
+
+.final div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.final div p{
     margin-left: 5px;
-    font-size: 12px;
+}
+.final div a{
+    color: white;
+}
+.final div a:hover{
+    color: red;
+}
+#sub{
+    color: #001F3F;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 700;
+    transition: transform 0.5s;
+}
+#sub:hover{
+    color: orange;
+    transform: scale(1.03);
+}
+
+
+
+
+
+@media (max-width: 650px){
+    .box{
+        flex-direction: column;
+        font-size: large;
+    }
+    .tbox, select{
+        width: 100%;
+    }
 }

@@ -3,134 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/loyaltypage.css">
+    <link rel="stylesheet" href="styles/loyaltyPage.css">
     <title>Groceries Supermarket</title>
 </head>
 <body>
     <header>
+
         <div class="head">
-            <a href="index.htm" class="logo">Groceries Supermarket </a>
+            <a href="index.htm" class="logo">Grocies Supermarket </a>
+            <nav>
+                <input type="checkbox" id="Sidebar_Active">
+                <label for="Sidebar_Active" class="open_sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </label>
+                <div  class="navigation_links">
+                    <label for="Sidebar_Active" class="close_sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><rect fill="none" height="32" width="32"/><path d="M22,3.41l-5.29,5.29L20,12h-8V4l3.29,3.29L20.59,2L22,3.41z M3.41,22l5.29-5.29L12,20v-8H4l3.29,3.29L2,20.59L3.41,22z"/></svg>
+                    </label>
+                    <a href="#">Browse</a>
+                    <a href="loyaltyoptions.html">Loyalty</a>
+                    <a href="#">About Us</a>
+                    <a href="#" id="sign_in">Sign In</a>
+                </div>
+            </nav>
         </div>
+
+        <div class="mini-nav">
+            <div class="dropdown">
+                <a href="#" class="drop">Categories</a>
+                <div class="dropdown-content">
+                    <a href="vegepage.html">Vegetables</a>
+                    <a href="dairyPage.html">Dairy Products</a>
+                    <a href="cosSkinPage.html">Cosmetics & Skincare</a>
+                </div>
+            </div> 
+            <a href="#">Cart</a>
+            <a href="#">Order</a>
+        </div>
+
     </header>
     <main>
         <div class="Description">
             <h2>Grocery Supermarket Loyalty Program</h2>
             <p>Join our loyalty program and enjoy exclusive benefits tailored to your needs!</p>
         </div>
-        <div class="description">
+        <div class="loyalty">
             <div class="membership">
-                Regular
+                <div>
+                    <h2>Standard</h2>
+                    <hr>
+                    <ul>
+                        <li>Exclusive discounts for selected items</li>
+                        <li>Access to weekly deals and promotions</li>
+                        
+                        <li>Earn points for every purchase</li>
+                    </ul>
+                    <hr>
+                </div>
+                <a href="#" class="reg">Register Now</a>
+                <a href="#">Terms & Conditions</a>
             </div>
             <div class="membership">
-                Golden Age
+                <div>
+                    <h2>Golden</h2>
+                    <hr>
+                    <ul>
+                        <li>Exclusive Senior discounts</li>
+                        <li>Line skip pass during peak hours</li>
+                        <li>Reserved Parking</li>
+                        <li>Seasonal gift packs</li>
+                    </ul>
+                    <hr>
+                </div>
+                <a href="#" class="reg">Register Now</a>
+                <a href="#">Terms & Conditions</a>
             </div>
             <div class="membership">
-                Premium
+                <div>
+                    <h2>Premium</h2>
+                    <hr>
+                    <ul>
+                        <li>Personal Assistant</li>
+                        <li>Early bird access to limited stock items</li>
+                        <li>Exclusive Premium Discount on total bill</li>
+                        <li>Reserved Parking</li>
+                        <li>Free Delivery</li>
+                    </ul>
+                    <hr>
+                </div>
+                <a href="#" class="reg">Register Now</a>
+                <a href="#">Terms & Conditions</a>
             </div>
 
         </div>
-            <!-- 
-              
-        <table>
-            <tr>
-                <th>Tier</th>
-                <th>Description</th>
-                <th>Benefits</th>
-                <th>Cost</th>
-            </tr>
-            <tr>
-                <td>Regular</td>
-                <td>Entry-level tier available to all customers.</td>
-                <td>Accumulation of points, exclusive deals, birthday rewards, personalized recommendations.</td>
-                <td>Free :D</td>
-            </tr>
-            <tr>
-                <td>Golden Age (Elderly)</td>
-                <td>Specifically designed for senior citizens, catering to their unique needs.</td>
-                <td>Enhanced discounts, priority services, special events, complimentary refreshments.</td>
-                <td>Free :D</td>
-            </tr>
-            <tr class="premium">
-                <td>Premium</td>
-                <td>Exclusive tier for high-value customers.</td>
-                <td>VIP customer service, early access to sales, exclusive events, luxury perks.</td>
-                <td>Rs. 10000 per year</td>
-            </tr>
-        </table> -->
-        <form action="#">
-            <fieldset class="field1">
-                <legend>Personal Details</legend>
-                <div class="names">
-                    <div class="blocks">
-                        <label for="fname">First Name*</label><br>
-                        <input type="text" class="textbox" id="fname" placeholder="Spongebob">
-                    </div>
+        
+        <form action="#" class="f">
+            <p>Loyalty Registration</p>
+            <div class="form">
+                <div class="box">
+                    <div class="col1">
+                        <div>
+                            <label for="option">Loyalty Tier:</label>
+                            <select name="option" id="option">
+                                <option value="">Standard</option>
+                                <option value="">Golden</option>
+                                <option value="">Premium</option>
+                            </select>
+                        </div>
 
-                    <div class="blocks">
-                        <label for="lname">Last Name*</label><br>
-                        <input type="text" class="textbox" id="lname" placeholder="Squarepants">
-                    </div>
+                        <div>
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" class="tbox">
+                        </div>
 
-                    <div class="blocks">
-                        <label for="nic">NIC Number*</label><br>
-                        <input type="text" class="textbox" id="lname" placeholder="NIC Number">
-                    </div>
+                        <div>
+                            <label for="mname">Middle Name:</label>
+                            <input type="text" id="mname" class="tbox">
+                        </div>
 
-                    <div class="blocks">
-                        <label for="dob">Date of Birth*</label><br>
-                        <input type="date" name="dob" id="dob">
+                        <div>
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" class="tbox">
+                        </div>
                     </div>
+                    <div class="col2">
+                        <div>
+                            <label for="bday">Bday</label>
+                            <input type="date" name="Bday" id="bday" class="tbox">
+                        </div>
 
-                    <div class="blocks">
-                        <label for="gender">Gender</label><br>
-                        <input type="radio" name="gender" value="female">Female
-                        <input type="radio" name="gender" value="male">Male
-                        <input type="radio" name="gender" value="nb">Non-Binary
+                        <div>
+                            <label for="number">Mobile Number:</label>
+                            <input type="number" id="number" class="tbox">
+                        </div>
+
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" class="tbox">
+                        </div>
                     </div>
                 </div>
-            </fieldset>
-            <fieldset class="field2">
-                <legend>Preferences</legend>
-                <div class="blocks">
-                    <label for="smethod">Prefered Shopping Method</label><br>
-                    <input type="checkbox" name="smethod" id="instore">In-Store
-                    <input type="checkbox" name="smethod" id="online">Online
+                <div class="final">
+                    <div>
+                        <input type="checkbox" name="Agree">
+                        <p>Agree to the <a href="#">Terms and Conditions</a></p>
+                    </div>
+                    <input type="submit" value="SUBMIT" id="sub">
+                    
                 </div>
-
-                <div class="blocks">
-                    <label for="cmethod">Prefered Communication Medium</label><br>
-                    <input type="checkbox" name="cmethod" id="sms">SMS
-                    <input type="checkbox" name="cmethod" id="email">Email
-                    <input type="checkbox" name="cmethod" id="phone">Phone
-                    <input type="checkbox" name="cmethod" id="fax">Fax
-                </div>
-
-                <div class="blocks">
-                    <label for="emethod">Would you prefer to use tote bags for each purchase</label><br>
-                    <input type="radio" name="emethod" id="yes">Yes
-                    <input type="radio" name="emethod" id="no">No
-                </div>
-            </fieldset>
-            <fieldset class="field3">
-                <legend>Additional Information</legend>
-                <div class="blocks">
-                    <label for="regular">Regular</label>
-                    <input type="radio" id="regular" name="membership" value="regular"><br>
-                </div>
-                <div class="blocks">
-                    <label for="golden">Golden Age (Elderly)</label>
-                    <input type="radio" id="golden" name="membership" value="golden"><br>
-                </div>
-                <div class="blocks">    
-                    <label for="premium" class="premiump">Premium</label>
-                    <input type="radio" id="premium" name="membership" value="premium"><br>
-                </div>
-            </fieldset>
-            
-
+            </div>
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="top_feet"></section>
+        <div class="bottom_feet">
+            <nav>
+            <p>&copy; Groceries Supermarket</p>
+            </nav>
+
+        </div>
+    </footer>
     
 </body>
 </html>
