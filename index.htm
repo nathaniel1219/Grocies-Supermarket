@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <div class="head">
+            <a href="index.htm" class="logo">Grocies Supermarket </a>
+            <div class="searchbar">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a>
+                <input type="text" placeholder="Search Products">
+                
+            </div>
+
+            <nav>
+                <input type="checkbox" id="Sidebar_Active">
+                <label for="Sidebar_Active" class="open_sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </label>
+                <div  class="navigation_links">
+                    <label for="Sidebar_Active" class="close_sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><rect fill="none" height="32" width="32"/><path d="M22,3.41l-5.29,5.29L20,12h-8V4l3.29,3.29L20.59,2L22,3.41z M3.41,22l5.29-5.29L12,20v-8H4l3.29,3.29L2,20.59L3.41,22z"/></svg>
+                    </label>
+                    <a href="#">Browse</a>
+                    <a href="loyaltypage.html">Loyalty</a>
+                    <a href="#">About Us</a>
+                    <a href="#" id="sign_in">Sign In</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="mini-nav">
+            <div class="dropdown">
+                <a href="#" class="drop">Categories</a>
+                <div class="dropdown-content">
+                    <a href="vegepage.html">Vegetables</a>
+                    <a href="dairyPage.html">Dairy Products</a>
+                    <a href="cosSkinPage.html">Cosmetics & Skincare</a>
+                </div>
+            </div> 
+            <a href="#">Cart</a>
+            <a href="#">Order</a>
+        </div>
+
+        <!--This is the searchbar for the mobile view-->
+        <div class="searchbar2">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a>
+            <input type="text" placeholder="Search Products">
+        </div>
+
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="image">
+                <img src="images/MAIN.jpeg" alt="MAIN IMAGE">
+                <h1>Welcome to Groceries Supermarket</h1>
+                <div class="content">
+                    <p>Welcome to Groceries Supermarket! <br>We pride ourselves on offering the freshest groceries sourced from local farms and trusted suppliers. Our commitment to quality extends to our convenient services, including delivery, catering, and party planning. Experience freshness and convenience at Groceries Supermarket today!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories">
+            <p id="p">Explore Categories</p>
+            <div class="cats">
+                <div>
+                    <a href="#vegetables"><img src="images/Icons/home page/categories/vege_icon.svg" alt="Vegetables"></a>
+                    <a href="vegepage.html"><p>Go To Vegetables</p></a>
+                
+                </div>
+                <div>
+                    <a href="#dairy"><img src="images/Icons/home page/categories/dairy_icon3.svg" alt="Dairy"></a>
+                    <a href="dairyPage.html"><p>Go To Dairy Products</p></a>
+                </div>
+                <div>
+                    <a href="#cosmetics"><img src="images/Icons/home page/categories/skincare_icon.svg" alt="Cosmetics Skincare"></a>
+                    <a href="cosSkinPage.html"><p>Go To Cosmetics & Skincare</p></a>
+                </div>
+            </div>
+        </div>
+        
+        <section class="vegetables" id="vegetables">
+            <h1 class="vege_head">EXPLORE <br> FRESHNESS</h1>
+            <div class="vege_container">
+                <div class="about">
+                    <div id="scroller">
+                        <ul>
+                            <li>Explore the vibrant world of fresh vegetables at Grocies Supermarket's dedicated produce section. From crisp greens to flavorful root vegetables, we offer a diverse selection sourced directly from inhouse farms</li> <br>
+                            <li>Our commitment to quality ensures that you receive only the freshest produce, packed with nutrients and flavor. Whether you're preparing a hearty stew or a refreshing salad, our vegetables are the perfect choice for every culinary creation.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Our Farms</p>
+                        <ol>
+                            <li>Branch 1</li>
+                            <li>Branch 2</li>
+                            <li>Branch 3</li> <br> <br><br>
+                            <a href="vegepage.html">Learn More</a>
+                        </ol>
+                    </div>
+                </div>
+                <div class="deals">
+                    <p id="d_head">Vegetables Deals</p>
+                    <div class="scroll">
+                        <div class="item1">
+                            <img src="images/veges/carrot-removebg-preview.png" alt="carrot">
+                            <p class="order_item">Carrots <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item2">
+                            <img src="images/veges/tomato-removebg-preview.png" alt="tomato">
+                            <p class="order_item">Tomatoes <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item3">
+                            <img src="images/veges/cucmber-removebg-preview.png" alt="cucumber">
+                            <p class="order_item">Cucumbers <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item4">
+                            <img src="images/veges/egg-removebg-preview.png" alt="eggplant">
+                            <p class="order_item">Eggplants <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item5">
+                            <img src="images/veges/potato-removebg-preview.png" alt="potato">
+                            <p class="order_item">Potatoes <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item6">
+                            <img src="images/veges/redonion-removebg-preview.png" alt="red onion">
+                            <p class="order_item">Red Onions <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item7">
+                            <img src="images/veges/cabbage-removebg-preview.png" alt="cabbage">
+                            <p class="order_item">Cabbages <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item8">
+                            <img src="images/veges/broccoli-removebg-preview.png" alt="broccoli">
+                            <p class="order_item">Broccoli <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item9">
+                            <img src="images/veges/cauli-removebg-preview.png" alt="cauliflower">
+                            <p class="order_item">Cauliflower <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item10">
+                            <img src="images/veges/celery-removebg-preview.png" alt="celery">
+                            <p class="order_item">Celery <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item11">
+                            <img src="images/veges/beetroot-removebg-preview.png" alt="beetroot">
+                            <p class="order_item">Beetroot <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="dairy" id="dairy">
+            <h1 class="dairy_head">D A I R Y <br> H A V E N</h1>
+            <div class="vege_container">
+                <div class="about">
+                    <div id="scroller">
+                        <ul>
+                            <li>Indulge in the rich and creamy goodness of our dairy products, sourced directly from local farms. From farm-fresh milk to artisanal cheeses, we offer a wide range of dairy delights to elevate your culinary experience</li> <br>
+                            <li>Whether you're a cheese connoisseur or a lover of creamy yogurt, our dairy selection caters to every taste and preference. Experience the difference that quality and freshness make with SuperMart's dairy offerings.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Our Farms</p>
+                        <ol>
+                            <li>Branch 1</li>
+                            <li>Branch 2</li>
+                            <li>Branch 3</li> <br> <br><br>
+                            <a href="vegepage.html">Learn More</a>
+                        </ol>
+                    </div>
+                </div>
+                <div class="deals">
+                    <p id="d_head">Dairy Deals</p>
+                    <div class="scroll">
+                        <div class="item1">
+                            <img src="images/dairy/butter-removebg-preview.png" alt="Butter">
+                            <p class="order_item">Butter <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item2">
+                            <img src="images/dairy/buttermilk-removebg-preview.png" alt="Butter Milk">
+                            <p class="order_item">Butter Milk <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item3">
+                            <img src="images/dairy/condensedmilk-removebg-preview.png"  alt="Condensed Milk">
+                            <p class="order_item">Condensed Milk <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item4">
+                            <img src="images/dairy/milk-removebg-preview.png" alt="milk">
+                            <p class="order_item">Milk <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item5">
+                            <img src="images/dairy/ghee-removebg-preview.png" alt="ghee">
+                            <p class="order_item">Ghee <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item6">
+                            <img src="images/dairy/paneer-removebg-preview.png"  alt="paneer">
+                            <p class="order_item">Paneer <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item7">
+                            <img src="images/dairy/bluecheese-removebg-preview.png"  alt="blue cheese">
+                            <p class="order_item">Blue Cheese <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item8">
+                            <img src="images/dairy/raclettecheese-removebg-preview.png" alt="racclette cheese">
+                            <p class="order_item">Racclette Cheese <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item9">
+                            <img src="images/dairy/cheddarcheese-removebg-preview.png" alt="cheddar cheese">
+                            <p class="order_item">Cheddar Cheese <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item10">
+                            <img src="images/dairy/greekyoghurt-removebg-preview.png" alt="greek yorgurt">
+                            <p class="order_item">Greek Yorgurt <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item11">
+                            <img src="images/dairy/sourcream-removebg-preview.png" " alt="sour cream">
+                            <p class="order_item">Sour Cream <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="cosmetics" id="cosmetics">
+            <h1 class="cosmetics_head">DAZZLING<br> SKIN</h1>
+            <div class="cosmetics">
+                <div class="about">
+                    <div id="scroller">
+                        <ul>
+                            <li>Discover the secret to radiant skin and effortless beauty with SuperMart's range of cosmetics and skincare products. From nourishing moisturizers to long-lasting makeup essentials, we offer a curated selection to help you look and feel your best.</li> <br>
+                            <li>Our skincare experts are here to guide you towards products tailored to your skin type and concerns, ensuring a personalized approach to your beauty routine. Pamper yourself with our luxurious offerings and embrace your natural glow.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Our Farms</p>
+                        <ol>
+                            <li>Branch 1</li>
+                            <li>Branch 2</li>
+                            <li>Branch 3</li> <br> <br><br>
+                            <a href="vegepage.html">Learn More</a>
+                        </ol>
+                    </div>
+                </div>
+                <div class="deals">
+                    <p id="d_head">Cosmetics & Skincar Deals</p>
+                    <div class="scroll">
+                        <div class="item1">
+                            <img src="images/cosmetics/cleanser-removebg-preview.png" alt="cleanser">
+                            <p class="order_item">Cleanser <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item2">
+                            <img src="images/cosmetics/exfoliator-removebg-preview.png" alt="exfoliator">
+                            <p class="order_item">Exfoliator <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item3">
+                            <img src="images/cosmetics/moisturizer-removebg-preview.png"  alt="moisturizer">
+                            <p class="order_item">Moisturizer <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item4">
+                            <img src="images/cosmetics/sunblock-removebg-preview.png" alt="sunscreen">
+                            <p class="order_item">Sunscreen <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item5">
+                            <img src="images/cosmetics/cleanser-removebg-preview.png" alt="concealer">
+                            <p class="order_item">Concealer <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item6">
+                            <img src="images/cosmetics/mascara-removebg-preview.png" alt="mascara">
+                            <p class="order_item">Mascara <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item7">
+                            <img src="images/cosmetics/foundation-removebg-preview.png"  alt="foundation">
+                            <p class="order_item">Foundation <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item8">
+                            <img src="images/cosmetics/serum-removebg-preview.png" alt="serum">
+                            <p class="order_item">Face Serum <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item9">
+                            <img src="images/cosmetics/face_oil-removebg-preview.png" alt="face oil">
+                            <p class="order_item">Face Oil <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item10">
+                            <img src="images/cosmetics/facemask-removebg-preview.png" alt="face mask">
+                            <p class="order_item">Face Mask <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                        <div class="item11">
+                            <img src="images/cosmetics/lipstick-removebg-preview.png"  alt="lipstick">
+                            <p class="order_item">Lipstick <br> <del> Rs.150 </del> <br> Rs. 100</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="top_feet"></section>
+        <div class="bottom_feet">
+            <nav>
+            <p>&copy; Groceries Supermarket</p>
+            </nav>
+
+        </div>
+    </footer>
+
+
+    
+</body>
+</html>

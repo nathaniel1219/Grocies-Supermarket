@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');/*for the logo*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.head{
+    background-color: #001F3F;
+    display: flex;
+    justify-content: center;
+}
+.head a{
+    text-decoration: none;
+    text-align: center;
+    font-size:  20px;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+.head a:hover{
+    transform: scale(1.05);
+}
+
+.Description {
+    text-align: center;
+    color: #001F3F;
+    padding: 0px 10px;
+}
+
+
+
+
+
+
+.premium {
+    color: orangered;
+}
+
+form{
+    margin: 10px;
+    text-align: center;
+}
+fieldset{
+    margin: 60px;
+    border:2px solid ;
+    border-radius: 10px;
+}
+.textbox{
+    width: 80%;
+    border: none;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 2%;
+    color: white;
+}
+.blocks{
+    margin: 30px;
+}
+.premiump:hover::before {
+    content: "Please Contact Administrator To Unlock exclusive perks!";
+    display: block;
+    position: absolute;
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: -30px;
+    margin-left: 5px;
+    font-size: 12px;
+}
