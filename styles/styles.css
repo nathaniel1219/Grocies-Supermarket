@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');/*for the logo*/
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;1,500&display=swap');/*for the nav bar*/
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');/* for the section images */
 
 
 * {
@@ -78,15 +78,12 @@ body{
         background-color: #001F3F;
         z-index: 9999;
     }
-    
-
     .navigation_links{
         display: flex;
         flex-direction: row;
         width: 100%;
         align-items: center;
     }
-
     .navigation_links a{
         text-decoration: none;
         text-align: center;
@@ -134,10 +131,14 @@ body{
         display: none;
         position: absolute;
         background-color: #f9f9f9;
+        border-radius: 10px;
         min-width: 160px;
         padding: 15px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         z-index:1;
+    }
+    .dropdown-content a{
+        margin-bottom: 5px;
     }
     .dropdown:hover .dropdown-content {
         display: flex;
@@ -150,52 +151,49 @@ body{
     .wrapper {
         display: flex;
         align-items: center;
-        z-index: -1; /*problem*/
         margin: 30px;
         position: relative;
+        transition: transform 0.5s ease;
+        z-index: -1;
     }
-    
-    .image {
+    .image1 {
         width: 100%;
-      
+        display: flex;
     }
-    
-    .image img {
+    .image1 img {
         width: 100%;
         display: block;
         border-radius: 10px;
     }
-    
-    .image h1 {
+    .image1 h1{
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .image1 div {
         position: absolute;
-        font-size: 100px;
         text-align: center;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 0;
+        top: 35%;
+        left: 0;
+        right: 0;
     }
     
-    .content {
-        width: 100%;
-        height: 100% ;
-        top: 0;
-        color: white;
-        position: absolute;
-        background: rgba(0, 0, 0, 0.7);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px ;
-        font-size: 35px;
-        opacity: 0;
-        transition: 0.6s;
+.welcome {
+    margin: 30px 150px;
+    padding: 15px 30px;
+    font-size: 2rem;
+    animation: scale 5s ease-in-out forwards ;
+    color: #001F3F;
+    z-index: 1;
+  }
+  @keyframes scale {
+    0% {
+        transform: scale(1);
+      }
+    100% {
+      transform: scale(1.35);
     }
-    .content:hover{
-        opacity: 1;
-        z-index: 9999;
-    }
+  }
+
 
 
 
@@ -242,19 +240,12 @@ body{
 
 
 
-main p{
-    padding:  0.5%;
-}
-
-
-
-
 .about{
     display: flex;
-    flex-wrap: wrap;
     height: 100%;
     justify-content: space-evenly;
     width: 100%;
+    text-align: left;
 }
 .about div{
     height: 200px;
@@ -272,6 +263,7 @@ main p{
 .about div a{
     text-decoration: none;
     color: orangered;
+    text-align: center;
 }
 
 
@@ -300,7 +292,7 @@ main p{
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.scroll img{
+.item img{
     width:170px;
     height: 170px;
     transition: transform 0.5s ease;
@@ -345,11 +337,11 @@ main p{
     width: auto;
     border-radius: 10px;
     font-size: 75px;
-    color: #001F3F;
-    transition: transform 1s ease-out;
+    color: black;
+    transition: transform 2s ease-in-out;
 }
 .vege_head:hover{
-    transform: scale(1.05);
+    transform: scale(0.9);
 }
 
 
@@ -358,17 +350,15 @@ main p{
     text-align: center;
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
-    background-image: url('images/DAIRY.webp');
+    background-image: url('images/DAIRY.jpg');
     background-size:cover;
     width: auto;
     border-radius: 10px;
     font-size: 75px;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: transform 1s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 .dairy_head:hover{
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
 
 
@@ -376,17 +366,15 @@ main p{
     text-align: center;
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
-    background-image: url('images/COSMETICS.jpeg');
+    background-image: url('images/COSMETICS.png');
     background-size:cover;
     width: auto;
     border-radius: 10px;
     font-size: 75px;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: transform 1s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 .cosmetics_head:hover{
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
 
 
@@ -415,14 +403,12 @@ main p{
         top: 0;
         right: 0;
         background-color: #001F3F;
-        z-index: 9999;
     }
     .navigation_links a{
         box-sizing: border-box;
         height: auto;
         width: 100%;
         padding: 10px;
-        z-index: 9999;
     }
     .open_sidebar, .close_sidebar{
         display: block;
@@ -433,22 +419,26 @@ main p{
         position:fixed;
         top: 0;
         right: 0;
-        height: 100vh;
+        height: 300px;
         width: 60%; 
         background-color: #001F3F;
-        z-index: 9999;
+        z-index: 10;
     }
     .image h1{
         font-size: 30px;
     }
-    .content{
-        font-size: 20px;
-        padding: none;
+    
+    .welcome{
+        margin: 70px;
+    }
+    .item img{
+        width: 150px;
+        height: 150px;
     }
     
 }
 
-@media (max-width: 450px){
+@media (max-width: 460px){
     .searchbar{
         display: none;
     }
@@ -459,6 +449,7 @@ main p{
         background-color: white;
         margin: 13px;
         padding: 13px;
+        border-radius: 10px;
         border: 1px solid black;
         
     }
@@ -476,14 +467,19 @@ main p{
     .image h1{
         font-size: 20px;
     }
-    .content{
-        font-size: 15px;
-        padding: none;
+    
+    .about{
+        flex-direction: column;
+        align-items: center;
     }
     .about div{
-        padding: none;
         text-align: left;
-        font-size: 0.8em;
+        font-size: 1.5em;
+        margin: 30px;
+    }
+    .item img{
+        width: 140px;
+        height: 140px;
     }
     .vege_head, .dairy_head, .cosmetics_head{
         font-size: 50px;
