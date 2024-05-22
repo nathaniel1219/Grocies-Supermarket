@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/loyaltyPage.css">
-    <title>Groceries Supermarket</title>
+    <link rel="icon" sizes="180x180" href="images/Icons/FAVICON/favicon-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Icons/FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Icons/FAVICON/favicon-16x16.png">
+    <link rel="manifest" href="images/Icons/FAVICON/site.webmanifest">
+    <title>Grocies Supermarket</title>
 </head>
 <body>
     <header>
 
         <div class="head">
-            <a href="index.htm" class="logo">Grocies Supermarket </a>
+            <a href="index.htm" class="logo">Grocies <br> Supermarket </a>
             <nav>
                 <input type="checkbox" id="Sidebar_Active">
                 <label for="Sidebar_Active" class="open_sidebar">
@@ -22,7 +26,7 @@
                     </label>
                     <a href="#">Browse</a>
                     <a href="loyaltypage.html">Loyalty</a>
-                    <a href="#">About Us</a>
+                    <a href="aboutUsPage.html">About Us</a>
                     <a href="#" id="sign_in">Sign In</a>
                 </div>
             </nav>
@@ -38,7 +42,7 @@
                 </div>
             </div> 
             <a href="#">Cart</a>
-            <a href="#">Order</a>
+            <a href="orderPage.html">Order</a>
         </div>
 
     </header>
@@ -60,7 +64,7 @@
                     </ul>
                     <hr>
                 </div>
-                <a href="#" class="reg">Register Now</a>
+                <a href="#form" class="reg">Register Now</a>
                 <a href="#">Terms & Conditions</a>
             </div>
             <div class="membership">
@@ -75,7 +79,7 @@
                     </ul>
                     <hr>
                 </div>
-                <a href="#" class="reg">Register Now</a>
+                <a href="#form" class="reg">Register Now</a>
                 <a href="#">Terms & Conditions</a>
             </div>
             <div class="membership">
@@ -91,39 +95,40 @@
                     </ul>
                     <hr>
                 </div>
-                <a href="#" class="reg">Register Now</a>
+                <a href="#form" class="reg">Register Now</a>
                 <a href="#">Terms & Conditions</a>
             </div>
 
         </div>
         
         <form action="#" class="f">
-            <p>Loyalty Registration</p>
-            <div class="form">
+            
+            <div class="form" id="form">
+                <p id="p">Loyalty Registration</p>
                 <div class="box">
                     <div class="col1">
                         <div>
                             <label for="option">Loyalty Tier:</label>
                             <select name="option" id="option">
-                                <option value="">Standard</option>
-                                <option value="">Golden</option>
-                                <option value="">Premium</option>
+                                <option value="standard">Standard</option>
+                                <option value="golden">Golden</option>
+                                <option value="premium">Premium</option>
                             </select>
                         </div>
 
                         <div>
                             <label for="fname">First Name:</label>
-                            <input type="text" id="fname" class="tbox">
+                            <input type="text" id="fname" class="tbox" placeholder="Shalin">
                         </div>
 
                         <div>
                             <label for="mname">Middle Name:</label>
-                            <input type="text" id="mname" class="tbox">
+                            <input type="text" id="mname" class="tbox" placeholder="Nathaniel">
                         </div>
 
                         <div>
                             <label for="lname">Last Name:</label>
-                            <input type="text" id="lname" class="tbox">
+                            <input type="text" id="lname" class="tbox" placeholder="Perera">
                         </div>
                     </div>
                     <div class="col2">
@@ -134,12 +139,12 @@
 
                         <div>
                             <label for="number">Mobile Number:</label>
-                            <input type="number" id="number" class="tbox">
+                            <input type="number" id="number" class="tbox" placeholder="071-XXX-XXXX">
                         </div>
 
                         <div>
                             <label for="email">Email:</label>
-                            <input type="email" id="email" class="tbox">
+                            <input type="email" id="email" class="tbox" placeholder="nathaniel@gmail5.com">
                         </div>
                     </div>
                 </div>

@@ -19,15 +19,17 @@ body{
     text-align: center;
 }
 
-
+header{
+    position:sticky ;
+    top: 0;
+    z-index: 10;
+}
 .head{
     display: flex;
     background-color:#001F3F;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    position:sticky ;
-    top: 0;
 }
 
     .logo{
@@ -148,6 +150,13 @@ body{
 
 
 
+
+
+
+
+
+
+
     .wrapper {
         display: flex;
         align-items: center;
@@ -172,7 +181,7 @@ body{
     .image1 div {
         position: absolute;
         text-align: center;
-        top: 30%;
+        top: 3%;
         left: 0;
         right: 0;
     }
@@ -183,14 +192,13 @@ body{
     font-size: 2rem;
     animation: scale 5s ease-in-out forwards ;
     color: #001F3F;
-    z-index: 1;
   }
   @keyframes scale {
     0% {
         transform: scale(1);
       }
     100% {
-      transform: scale(1.35);
+      transform: scale(1.256);
     }
   }
 
@@ -274,8 +282,6 @@ body{
  #d_head{
     font-size: large;
 }
-
-
 .scroll{
     overflow: hidden;
     overflow-x: scroll;
@@ -332,7 +338,7 @@ body{
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
     background-image: url('images/VEGETABLES.png');
-    background-size: contain;
+    background-size: cover;
     width: auto;
     border-radius: 10px;
     font-size: 75px;
@@ -349,8 +355,8 @@ body{
     text-align: center;
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
-    background-image: url('images/DAIRY.jpg');
-    background-size:cover;
+    background-image: url('images/DAIRY.png');
+    background-size:contain;
     width: auto;
     border-radius: 10px;
     font-size: 75px;
@@ -402,6 +408,7 @@ body{
         top: 0;
         right: 0;
         background-color: #001F3F;
+        border-radius: 10px;
     }
     .navigation_links a{
         box-sizing: border-box;
@@ -423,8 +430,8 @@ body{
         background-color: #001F3F;
         z-index: 10;
     }
-    .image h1{
-        font-size: 30px;
+    .image1 h1{
+        font-size: 20px;
     }
     
     .welcome{
@@ -490,7 +497,6 @@ body{
     .content{
         font-size: 12px;
     }
-
 }
 
 

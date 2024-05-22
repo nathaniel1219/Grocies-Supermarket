@@ -15,14 +15,17 @@
 body{
     background-color: #f2f2f2;
 }
+header{
+    position:sticky ;
+    top: 0;
+    z-index: 10;
+}
 .head{
     display: flex;
     background-color:#001F3F;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    position:sticky ;
-    top: 0;
 }
     .logo{
         height: 100%;
@@ -186,7 +189,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     margin: 20px;
-    width: 200px;
+    width: 400px;
     padding: 10px 40px;
     background-color: #001F3F;
     color: white;
@@ -225,6 +228,11 @@ body{
     margin: 20px;
     border-radius: 10px;
 }
+#p{
+    margin: 10px;
+    padding: 20px;
+    font-size: 2em;
+}
 .box{
     border-radius: 10px;
     padding: 20px;
@@ -236,7 +244,6 @@ body{
 .col1 div, .col2 div{
     display: flex;
     flex-direction: column;
-    margin: 0px;
     width: 100%;
     
 }

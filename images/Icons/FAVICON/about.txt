@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Bungee Spice
+- Font Author: Copyright 2021 Roderick Sheeter
+- Font Source: https://fonts.gstatic.com/s/bungeespice/v11/nwpTtK2nIhxE0q-IwgSpZBqCzyI-aMPF7Q.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

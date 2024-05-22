@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');/* for the section images */
 
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@
     font-weight: 500;
     font-style: normal;
     font-size: medium;
+    text-align: center;
 }
 body{
     background-color: #f2f2f2;
@@ -37,9 +39,9 @@ header{
         font-weight: 400;
         transition: transform 0.5s ease;
     }
-    .logo:hover{
+        .logo:hover{
             transform: scale(1.05);
-    }
+        }
     nav{
         margin: 0;
         display: flex;
@@ -173,200 +175,143 @@ header{
 
 
 
-    .heading{
-        background-color: white;
-        margin: 30px;
-        border-radius: 10px;
-        padding: 40px;
-    }
-    .heading h1{
-        font-family: "Luckiest Guy", cursive;
-        font-weight: 400;
-        font-size: 2em;
-        margin-bottom: 20px;
-        background-color: #13cc44;
-        text-align: center;
-        border-radius: 10px;
-        padding: 20px;
-    }
-
-.branch_description{
+form{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-attachment: white;
-    padding: 10px;
-}
-.branch{
-    display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 30px;
+    border-radius: 10px;
+    flex: 1
 }
-.branch p, .branch h1{
-    color:#001F3F;
-    text-align: center;
+.col1, .col2{
+    flex: 1;
     padding: 20px;
 }
-.slider{
-    width: 450px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    overflow-x: scroll;
 
-}
-
-
-.u iframe{
-    width: 600px;
-}
-.u iframe, .u img{
-    border-radius: 10px;
-    height: 500px;
-}
-.u{
-    border-radius: 10px;
+.inputs, .inputs1{
+    background-color: #001F3F;
+    padding: 20px;
     color: white;
-    margin: 5px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.inputs div{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.tbox, select{
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    color: white;  
+    background-color: transparent;
+    text-align: left;
+    margin-bottom: 25px;
+}
+textarea {
+    background-color: transparent;
+    border:3px solid white;
+    color: white;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.f{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.f label{
+    margin-bottom: 5px;
+}
+.t{
+    display: flex;
+    justify-content: center;
+    margin-right: 6px;
+}
+.m{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+.m input{
+    margin-right: 5px;
+}
+
+#month, #year{
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: #001F3F;
+    cursor: pointer;
+}
+
+.summary{
+    background-color:#001F3F;
+    color: white;
+    border-radius: 10px;
+}
+.item img{
+    width: 150px;
+}
+#pic{
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item h2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.item .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.item .total {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.item #total .amount {
+    color: #d9534f;
+    font-size: 20px;
+}
+.item span{
+    margin: 0px 20px;
+}
+#pay{
+    margin-top: 100px;
+    color: #001F3F;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
     background-color: white;
-    flex:1;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
 }
-.u h1{
-    font-size: 2em;
-}
-
-
-
-
-
-
-.container img{
-    width:170px;
-    height: 170px;
-    transition: transform 0.5s ease;
-}
-.container div:hover img{
-        transform: translateY(-10px);
-}
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4,auto);
-    margin: 30px;
-    gap: 15px;
-}
-.container div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
+#pay input[type='submit']{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     height: 100%;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-
-.item1, .item2, .item3 {
-    grid-row: 1;
-}
-
-.item4, .item5, .item6 {
-    grid-row: 2;
-}
-
-.item7, .item8, .item9 {
-    grid-row: 3;
-}
-
-.item10, .item11, .item12 {
-    grid-row: 4; 
-}
-
-.container p{
-    background-color: #001F3F;
-    color: white;
     width: 100%;
+    transition: transform 0.5s;
 }
-
-.container div a{
-    background-color: #001F3F;
-    width: 100%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.container a:hover {
-    background-color: orangered;
-    transition: 0.6s;
-}
-
-.bottom_feet{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-    color: white;
-    background-color: #001F3F;
-}
-
-
-@media (max-width: 750px){
-    .container{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6,auto);
-    }
-    .item1, .item2{
-        grid-row: 1;
-    }
-    .item3, .item4{
-        grid-row: 2;
-    }
-    .item5, .item6{
-        grid-row: 3;
-    }
-    .item7, .item8{
-        grid-row: 4; 
-    }
-    .item9, .item10{
-        grid-row: 5; 
-    }
-    .item11, .item12{
-        grid-row: 6; 
-    }
-}
-
-@media (max-width: 500px){
-    .container{
-        display: block;
-    }
-    .container div{
-        margin-bottom: 20px;
-    }
-    .container img{
-        width:100px;
-        height: 100px;
-    }
-
-
-    .slider{
-        width: 200px;
-        overflow: none;
-    }
-    .u img{
-        display: none;
-    }
-    .u iframe{
-        height: 400px;
-        width: 100%;
-    }
-    .u h1{
-        font-size: 1.4em;
-    }
+#pay:hover input[type='submit']{
+    transform: scale(1.1);
+    color: #d9534f;
 }

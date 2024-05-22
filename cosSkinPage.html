@@ -4,226 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/cosSkinPage.css">
-    <title>Groceries Supermarket</title>
+    <link rel="icon" sizes="180x180" href="images/Icons/FAVICON/favicon-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Icons/FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Icons/FAVICON/favicon-16x16.png">
+    <link rel="manifest" href="images/Icons/FAVICON/site.webmanifest">
+    <title>Grocies Supermarket</title>
 </head>
 <body>
     <header>
+
         <div class="head">
-            <a href="index.htm" class="logo">Groceries Supermarket </a>
+            <a href="index.htm" class="logo">Grocies Supermarket </a>
+            <nav>
+                <input type="checkbox" id="Sidebar_Active">
+                <label for="Sidebar_Active" class="open_sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </label>
+                <div  class="navigation_links">
+                    <label for="Sidebar_Active" class="close_sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><rect fill="none" height="32" width="32"/><path d="M22,3.41l-5.29,5.29L20,12h-8V4l3.29,3.29L20.59,2L22,3.41z M3.41,22l5.29-5.29L12,20v-8H4l3.29,3.29L2,20.59L3.41,22z"/></svg>
+                    </label>
+                    <a href="#">Browse</a>
+                    <a href="loyaltypage.html">Loyalty</a>
+                    <a href="#">About Us</a>
+                    <a href="#" id="sign_in">Sign In</a>
+                </div>
+            </nav>
         </div>
+
         <div class="mini-nav">
             <div class="dropdown">
                 <a href="#" class="drop">Categories</a>
                 <div class="dropdown-content">
-                    <a href="vegepage.html">Fresh Produce</a>
+                    <a href="vegepage.html">Vegetables</a>
                     <a href="dairyPage.html">Dairy Products</a>
                     <a href="cosSkinPage.html">Cosmetics & Skincare</a>
                 </div>
-            </div>
-            <div class="dropdown">
-                <a href="#" class="drop">Services</a>
-                <div class="dropdown-content">
-                    <a href="#">Delivery</a>
-                    <a href="#">Catering</a>
-                    <a href="#">Party Planning</a>
-                </div>
-            </div>
-            <a href="#">Wishlist</a>
+            </div> 
             <a href="#">Cart</a>
+            <a href="#">Order</a>
         </div>
+
     </header>
     <main>
-        <h2>Cosmetics and Skincare Products</h2>
+        <div class="heading">
+            <h1>Cosmetics & Skincare Products</h1>
+            <p>Welcome to our Cosmetics and Skincare section! At Grocies Supermarket, we’ve curated a collection of beauty essentials to enhance your natural radiance. From moisturizers and cleansers to makeup must-haves, our products cater to diverse skin types. Explore anti-aging solutions, eco-friendly options, and men’s grooming essentials. Shop confidently and treat yourself to luxurious beauty that won’t break the bank! </p>
+        </div>
+        
 
-<table class="main_table">
-    <tr>
-        <th>Product</th>
-        <th>Description</th>
-        <th>Price</th>
-    </tr>
-    <tr>
-        <td class="product1">
-            <div class="item">
-                <img src="images/cosmetics/foundation-removebg-preview.png" alt="Foundation">
-                <p>Foundation</p>
-            </div>
-        </td>
-        <td>Provides even coverage for a flawless complexion.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
 
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product2">
-            <div class="item">
-                <img src="images/cosmetics/mascara-removebg-preview.png" alt="Mascara">
-                <p>Mascara</p>
-            </div>
-        </td>
-        <td>Lengthens and volumizes lashes for a dramatic look.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product3">
-            <div class="item">
-                <img src="images/cosmetics/concealer-removebg-preview.png" alt="concealer">
-                <p>Concealer</p>
-            </div>
-        </td>
-        <td>Camouflages blemishes and dark circles for a smooth, even skin tone.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product4">
-            <div class="item">
-                <img src="images/cosmetics/lipstick-removebg-preview.png" alt="concealer">
-                <p>Lipstick</p>
-            </div>
-        </td>
-        <td>Adds vibrant color and moisture to lips, enhancing the overall makeup look.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product5">
-            <div class="item">
-                <img src="images/cosmetics/facemask-removebg-preview.png" alt="facemask">
-                <p>Face Mask</p>
-            </div>
-        </td>
-        <td>Targets specific skin concerns such as hydration, acne, or anti-aging in just a few minutes.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product6">
-            <div class="item">
-                <img src="images/cosmetics/moisturizer-removebg-preview.png" alt="moisturizer">
-                <p>Moisturizer</p>
-            </div>
-        </td>
-        <td>Hydrates and nourishes the skin, leaving it soft, smooth, and radiant.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product7">
-            <div class="item">
-                <img src="images/cosmetics/sunblock-removebg-preview.png" alt="sunblock">
-                <p>Sunblock</p>
-            </div>
-        </td>
-        <td>Provides broad-spectrum protection against harmful UV rays, preventing sunburn and premature aging.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product8">
-            <div class="item">
-                <img src="images/cosmetics/serum-removebg-preview.png" alt="faceserum">
-                <p>Face Serum</p>
-            </div>
-        </td>
-        <td>Contains high concentrations of active ingredients to effectively target specific skin issues such as hydration, brightening, or anti-aging.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product9">
-            <div class="item">
-                <img src="images/cosmetics/cleanser-removebg-preview.png" alt="cleanser">
-                <p>Cleanser</p>
-            </div>
-        </td>
-        <td>Gently removes dirt, oil, and impurities without stripping the skin's natural moisture barrier.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product10">
-            <div class="item">
-                <img src="images/cosmetics/exfoliator-removebg-preview.png" alt="exfoliant">
-                <p>Exfoliator</p>
-            </div>
-        </td>
-        <td>Removes dead skin cells to reveal smoother, brighter skin and improve overall skin texture.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product11">
-            <div class="item">
-                <img src="images/cosmetics/eyecream-removebg-preview.png" alt="eyecream">
-                <p>Eye Cream</p>
-            </div>
-        </td>
-        <td>Targets dark circles, puffiness, and fine lines around the delicate eye area, resulting in a refreshed and youthful appearance.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="product12">
-            <div class="item">
-                <img src="images/cosmetics/face_oil-removebg-preview.png" alt="Face Oil">
-                <p>Face Oil</p>
-            </div>
-        </td>
-        <td>Nourishes and hydrates the skin, restoring moisture balance and improving skin texture and elasticity.</td>
-        <td>
-            <div class="item_price">
-                <p>Rs. 150</p>
-                <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
-            </div>
-        </td>
-    </tr>
-    
-</table>
+        <div class="wrapper">
+            <table class="main_table">
+                <thead>
+                <tr>
+                    <th id="l">Product</th>
+                    <th>Description</th>
+                    <th id="r">Price</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td class="product1">
+                        <div class="item">
+                            <img src="images/cosmetics/foundation-removebg-preview.png" alt="Foundation">
+                            <p>Foundation</p>
+                        </div>
+                    </td>
+                    <td class="u">Provides even coverage for a flawless complexion.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product2">
+                        <div class="item">
+                            <img src="images/cosmetics/mascara-removebg-preview.png" alt="Mascara">
+                            <p>Mascara</p>
+                        </div>
+                    </td>
+                    <td class="u">Lengthens and volumizes lashes for a dramatic look.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product3">
+                        <div class="item">
+                            <img src="images/cosmetics/concealer-removebg-preview.png" alt="concealer">
+                            <p>Concealer</p>
+                        </div>
+                    </td>
+                    <td class="u">Camouflages blemishes and dark circles for a smooth, even skin tone.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product4">
+                        <div class="item">
+                            <img src="images/cosmetics/lipstick-removebg-preview.png" alt="concealer">
+                            <p>Lipstick</p>
+                        </div>
+                    </td>
+                    <td class="u">Adds vibrant color and moisture to lips, enhancing the overall makeup look.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product5">
+                        <div class="item">
+                            <img src="images/cosmetics/facemask-removebg-preview.png" alt="facemask">
+                            <p>Face Mask</p>
+                        </div>
+                    </td>
+                    <td class="u">Targets specific skin concerns such as hydration, acne, or anti-aging in just a few minutes.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product6">
+                        <div class="item">
+                            <img src="images/cosmetics/moisturizer-removebg-preview.png" alt="moisturizer">
+                            <p>Moisturizer</p>
+                        </div>
+                    </td>
+                    <td class="u">Hydrates and nourishes the skin, leaving it soft, smooth, and radiant.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product7">
+                        <div class="item">
+                            <img src="images/cosmetics/sunblock-removebg-preview.png" alt="sunblock">
+                            <p>Sunblock</p>
+                        </div>
+                    </td>
+                    <td class="u">Provides broad-spectrum protection against harmful UV rays, preventing sunburn and premature aging.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product8">
+                        <div class="item">
+                            <img src="images/cosmetics/serum-removebg-preview.png" alt="faceserum">
+                            <p>Face Serum</p>
+                        </div>
+                    </td>
+                    <td class="u">Contains high concentrations of active ingredients to effectively target specific skin issues such as hydration, brightening, or anti-aging.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product9">
+                        <div class="item">
+                            <img src="images/cosmetics/cleanser-removebg-preview.png" alt="cleanser">
+                            <p>Cleanser</p>
+                        </div>
+                    </td>
+                    <td class="u">Gently removes dirt, oil, and impurities without stripping the skin's natural moisture barrier.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product10">
+                        <div class="item">
+                            <img src="images/cosmetics/exfoliator-removebg-preview.png" alt="exfoliant">
+                            <p>Exfoliator</p>
+                        </div>
+                    </td>
+                    <td class="u">Removes dead skin cells to reveal smoother, brighter skin and improve overall skin texture.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product11">
+                        <div class="item">
+                            <img src="images/cosmetics/eyecream-removebg-preview.png" alt="eyecream">
+                            <p>Eye Cream</p>
+                        </div>
+                    </td>
+                    <td class="u">Targets dark circles, puffiness, and fine lines around the delicate eye area, resulting in a refreshed and youthful appearance.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product12">
+                        <div class="item">
+                            <img src="images/cosmetics/face_oil-removebg-preview.png" alt="Face Oil">
+                            <p>Face Oil</p>
+                        </div>
+                    </td>
+                    <td class="u">Nourishes and hydrates the skin, restoring moisture balance and improving skin texture and elasticity.</td>
+                    <td>
+                        <div class="item_price">
+                            <p>Rs. 150</p>
+                            <a href="order.html"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a>
+                        </div>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
     </main>
     <footer>
         <div class="bottom_feet">
