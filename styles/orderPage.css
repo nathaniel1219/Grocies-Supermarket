@@ -199,7 +199,16 @@ header{
 
 
 
-
+.title{
+        font-family: "Luckiest Guy", cursive;
+        font-weight: 400;
+        font-size: 2em;
+        padding: 20px;
+        margin: 30px;
+        color: white;
+        background-color: rgba(39, 35, 85, 0.566);
+        border-radius: 10px;
+}
 form{
     display: flex;
     flex-wrap: wrap;
