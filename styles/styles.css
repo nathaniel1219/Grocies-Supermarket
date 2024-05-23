@@ -176,12 +176,15 @@ header{
     }
     .image1 h1{
         font-size: 2em;
-        font-weight: 700;
+        text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 200;
+        color: #001F3F;
     }
     .image1 div {
         position: absolute;
         text-align: center;
-        top: 3%;
+        top: 5%;
         left: 0;
         right: 0;
     }
@@ -216,6 +219,7 @@ header{
     margin: 30px;
     padding: 10px;
     font-size: 20px;
+    color: #001F3F;
 }
 .cats{
     display: flex;
@@ -339,7 +343,6 @@ header{
     font-weight: 400;
     background-image: url('images/VEGETABLES.png');
     background-size: cover;
-    width: auto;
     border-radius: 10px;
     font-size: 75px;
     color: black;
@@ -356,7 +359,8 @@ header{
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
     background-image: url('images/DAIRY.png');
-    background-size:contain;
+    color: white;
+    background-size:cover;
     width: auto;
     border-radius: 10px;
     font-size: 75px;
@@ -391,6 +395,31 @@ header{
     padding: 2%;
     color: white;
     background-color: #001F3F;
+}
+.icons{
+    display: flex;
+}
+.icons img{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    transition: transform 0.5s;
+}
+.icons img:hover{
+    transform: scale(0.9);
+}
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.notes a,.notes p{
+    text-decoration: none;
+    color: white;
+    margin-right: 7px;
+}
+.notes a:hover{
+    color: red;
+    transition: 0.3s ease;
 }
 
 

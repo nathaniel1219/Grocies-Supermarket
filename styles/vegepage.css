@@ -121,6 +121,31 @@ header{
         color: white;
         background-color: #001F3F;
     }
+    .icons{
+        display: flex;
+    }
+    .icons img{
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        transition: transform 0.5s;
+    }
+    .icons img:hover{
+        transform: scale(0.9);
+    }
+    .notes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .notes a,.notes p{
+        text-decoration: none;
+        color: white;
+        margin-right: 7px;
+    }
+    .notes a:hover{
+        color: red;
+        transition: 0.3s ease;
+    }
     
     @media (max-width: 750px){
         *{
@@ -183,8 +208,9 @@ header{
         font-family: "Luckiest Guy", cursive;
         font-weight: 400;
         font-size: 2em;
+        color: white;
         margin-bottom: 20px;
-        background-color: #13cc44;
+        background-color: #689668;
         text-align: center;
         border-radius: 10px;
         padding: 20px;
@@ -212,7 +238,7 @@ header{
     width: 450px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     overflow: hidden;
     overflow-x: scroll;
 
@@ -295,7 +321,7 @@ header{
     width: 100%;
 }
 
-.container div a{
+.container a{
     background-color: #001F3F;
     width: 100%;
     border-bottom-left-radius: 10px;
@@ -343,20 +369,62 @@ header{
 }
 
 @media (max-width: 500px){
-    .container{
-        display: block;
-    }
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, auto); 
+      }
+      .item1 {
+        grid-row: 1;
+      }
+      .item2 {
+        grid-row: 2;
+      }
+      .item3 {
+        grid-row: 3;
+      }
+      .item4 {
+        grid-row: 4;
+      }
+      .item5 {
+        grid-row: 5;
+      }
+      .item6 {
+        grid-row: 6;
+      }
+      .item7 {
+        grid-row: 7;
+      }
+      .item8 {
+        grid-row: 8;
+      }
+      .item9 {
+        grid-row: 9;
+      }
+      .item10 {
+        grid-row: 10;
+      }
+      .item11 {
+        grid-row: 11;
+      }
+      .item12 {
+        grid-row: 12;
+      }
     .container div{
-        margin-bottom: 20px;
+        width: 200px;
+        margin: 0 auto;
     }
+      
+      
     .container img{
-        width:100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
     }
+    
 
 
     .slider{
         width: 200px;
+        height: 200px;
         overflow: none;
     }
     .u img{

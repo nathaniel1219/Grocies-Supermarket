@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');/*for the logo*/
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');/* for the section images */
+
 
 * {
     margin: 0;
@@ -114,13 +116,38 @@ header{
         z-index: 1;
     }
     .bottom_feet{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2%;
-        color: white;
-        background-color: #001F3F;
-    }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2%;
+      color: white;
+      background-color: #001F3F;
+  }
+  .icons{
+      display: flex;
+  }
+  .icons img{
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      transition: transform 0.5s;
+  }
+  .icons img:hover{
+      transform: scale(0.9);
+  }
+  .notes{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .notes a,.notes p{
+      text-decoration: none;
+      color: white;
+      margin-right: 7px;
+  }
+  .notes a:hover{
+      color: red;
+      transition: 0.3s ease;
+  }
     
     @media (max-width: 750px){
         *{
@@ -170,12 +197,165 @@ header{
 
 
 .heading{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 30px;
+    padding: 1px;
+    border-radius: 10px;
+    color: white;
+    background-color: #ad571e;
+}
+.welcome {
+    margin: 30px;
+    font-size: 2rem;
+    color: #001F3F;
+  }
+.title{
+    font-family: "Luckiest Guy", cursive;
+        font-weight: 400;
+        font-size: 2em;
+        color: #001F3F;
+    margin-bottom: 15px;
+}
+  .branch{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     margin: 30px;
-    padding: 20px;
     border-radius: 10px;
+  }
+  .branch h1{
+    font-size: 30px;
+    color: #001F3F;
+  }
+  .cols{
+    display: flex;
+    align-items: stretch;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .cols h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .cols p{
     background-color: #001F3F;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: auto;
+  }
+  .cols img, iframe{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .cols div{
+    flex: 1;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .image{
+   height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+
+
+.services{
+    display: flex;
+    flex-direction: column;
 }
+  table {
+    margin: 30px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    color: #001F3F;
+  }
+  thead {
+    background-color: #001F3F;
+    color: white;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 3px solid #001F3F;
+  }
+  th {
+    background-color: #001F3F;
+    color: white;
+  }
+  tfoot {
+    background-color: #001F3F;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+  .customerBox {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    transition: transform 0.5s ease;
+  }
+  .customerBox:hover{
+    transform: scale(1.01);
+  }
+
+  .customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 10px;
+  }
+
+  .customer img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    
+  }
+
+  .customer h3 {
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 1.2em;
+    padding: 20px;
+    color: red;
+    margin: 10px 0;
+  }
+
+  .stars {
+    color: gold;
+  }
+
+
+
+  @media (max-width: 700px){
+    .cols{
+        flex-direction: column-reverse;
+    }
+    #kirk{
+        flex-direction: column;
+    }
+  }

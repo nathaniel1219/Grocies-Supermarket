@@ -123,6 +123,31 @@ header{
         color: white;
         background-color: #001F3F;
     }
+    .icons{
+        display: flex;
+    }
+    .icons img{
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        transition: transform 0.5s;
+    }
+    .icons img:hover{
+        transform: scale(0.9);
+    }
+    .notes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .notes a,.notes p{
+        text-decoration: none;
+        color: white;
+        margin-right: 7px;
+    }
+    .notes a:hover{
+        color: red;
+        transition: 0.3s ease;
+    }
     
     @media (max-width: 750px){
         *{
