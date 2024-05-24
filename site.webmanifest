@@ -1,7 +1,7 @@
 {
     "name": "Grocies supermarket",
     "short_name": "GS Online",
-    "description": "Grocies Supermarke is an Online Grocery store",
+    "description": "Grocies supermarket is an Online Grocery store",
     "start_url": "index.htm",
     "display": "standalone",
     "background_color": "#ffffff",
