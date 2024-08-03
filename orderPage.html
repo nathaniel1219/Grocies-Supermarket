@@ -49,143 +49,381 @@
 
     </header>
     <main>
-        <h1 class="title">Order From Grocies Supermarket</h1>
-        <form>
-            <div class="col1">
-                <div class="inputs">
-                    <div class="addy">
-                        <label for="sadd">Shipping Address:</label>
-                        <textarea name="sadd" id="sadd"></textarea>
-                    </div>
+        <h1 class="title">Order From Grocies Supermarket</h1> <!-- Customize this h1 to flip with some info when hovered over -->
 
-                    <div>
-                        <label for="mname">Name:</label>
-                        <input type="text" id="name" class="tbox">
-                    </div>
+        <div class="prods" id="fruits">
+            <p class="prod_title">Fresh Fruits</p>
 
-                    <div>
-                        <label for="lname">Last Name:</label>
-                        <input type="text" id="lname" class="tbox">
+            <div class="scroll">
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageFruits/mangosteen.png" alt="mangosteen" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Mangosteen <br> Rs. 100 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="mangosteen" value="0" placeholder="kg"> 
+                            <p>Kg</p>
+                        </div> 
                     </div>
                 </div>
-                <div class="inputs1">
-
-                    <div class="f">
-                        <label for="payment">Payment Medium: </label>
-                        <div class="t" >
-                            <div class="m">
-                                <p>Cash</p>
-                                <input type="radio" name="payment" id="COD">
-                            </div>
-                            <div class="m">
-                                <p>Card</p>
-                                <input type="radio" name="payment" id="Card">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="f">
-                        <label for="cnum">Card Number:</label>
-                        <input type="number" id="cnum" class="tbox" placeholder="XXXX-XXXX-XXXX-XXXX" >
-                    </div>
-
-                    <div class="f">
-                        <label for="cnum">Card Number:</label>
-                        <div class="t">
-                        <select name="month" id="month" >
-                            <option value="01">January (01)</option>
-                            <option value="02">February (02)</option>
-                            <option value="03">March (03)</option>
-                            <option value="04">April (04)</option>
-                            <option value="05">May (05)</option>
-                            <option value="06">June (06)</option>
-                            <option value="07">July (07)</option>
-                            <option value="08">August (08)</option>
-                            <option value="09">September (09)</option>
-                            <option value="10">October (10)</option>
-                            <option value="11">November (11)</option>
-                            <option value="12">December (12)</option>
-                        </select>
-                        <select name="year" id="year">
-                            <option value="2024">2024</option>
-                            <option value="2025">2025</option>
-                            <option value="2026">2026</option>
-                            <option value="2027">2027</option>
-                            <option value="2028">2028</option>
-                            <option value="2029">2029</option>
-                            <option value="2030">2030</option>
-                            <option value="2031">2031</option>
-                            <option value="2032">2032</option>
-                            <option value="2033">2033</option>
-                            <option value="2034">2034</option>
-                            <option value="2035">2035</option>
-                            <option value="2036">2036</option>
-                            <option value="2037">2037</option>
-                            <option value="2038">2038</option>
-                            <option value="2039">2039</option>
-                            <option value="2040">2040</option>
-                            <option value="2041">2041</option>
-                            <option value="2042">2042</option>
-                            <option value="2043">2043</option>
-                            <option value="2044">2044</option>
-                            <option value="2045">2045</option>
-                            <option value="2046">2046</option>
-                            <option value="2047">2047</option>
-                            <option value="2048">2048</option>
-                            <option value="2049">2049</option>
-                            <option value="2050">2050</option>
-                        </select>
-                        </div>
-                    </div>
-
-                    <div class="f">
-                        <label for="lname">CVV:</label>
-                        <input type="number" id="lname" class="tbox" placeholder="XXX">
-                    </div>
-
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageFruits/guava.png" alt="guava" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Guava <br> Rs. 250 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="guava" value="0" placeholder="kg"> 
+                            <p>Kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageFruits/rambutan.png" alt="rambutan" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Rambutan <br> Rs. 400 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="rambutan" value="0" placeholder="kg"> 
+                            <p>Kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageFruits/strawberry.png" alt="strawberry" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Strawberry <br> Rs. 600 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="strawberry" value="0" min = "0" placeholder="kg"> 
+                            <p>Kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageFruits/blackberry.png" alt="blackberry" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Blackberry <br> Rs. 1650 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="blackberry" value="0" min = "0" placeholder="kg"> 
+                            <p>Kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageFruits/blueberry.png" alt="blueberry" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Blueberry <br> Rs. 2050 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="blueberry" value="0" min = "0" placeholder="kg"> 
+                            <p>Kg</p>
+                        </div> 
+                    </div>  
                 </div>
             </div>
-            <div class="col2">
-                <div class="summary">
-                    
-                    <div class="item">
-                        <div class="row">
-                            <h2>Pay now</h2>
-                        </div>
+        </div>
 
-                        <div id="pic" class="row">
-                            <img src="images/cosmetics/moisturizer-removebg-preview.png" alt="moisturizer">
-                            <p>Moisturizer</p>
-                        </div>
-
-                        <div class="row">
-                            <span>Subtotal</span>
-                            <span>Rs. 150.0</span>
-                        </div>
-
-                        <div class="row">
-                            <span>Total shipping</span>
-                            <span>Rs. 500.0</span>
-                        </div>
-
-                        <div class="row">
-                            <span>Total taxes</span>
-                            <span>Rs. 20.0</span>
-                        </div>
-
-                        <div class="row" id="total">
-                            <span>Total</span>
-                            <span class="amount">Rs. 670.0</span>
-                        </div>
-
-                        <div id="pay">
-                            <input type="submit" value="Pay Now">
-                        </div>
+        <div class="prods" id="vegetables">
+            <p class="prod_title">Fresh Veggies</p>
+            <div class="scroll">
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageVeges/carrot.png" alt="carrot" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Carrot <br> Rs. 350 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="carrot" value="0" min="0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
                     </div>
                 </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageVeges/eggplant.png" alt="eggplant" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Eggplant <br> Rs. 400 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="eggplant" value="0" min="0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageVeges/onion.png" alt="onion" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Onion <br> Rs. 230 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="onion" value="0" min="0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageVeges/potato.png" alt="potato" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Potato <br> Rs. 150 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="potato" value="0" min = "0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageVeges/tomato.png" alt="tomato" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Tomato <br> Rs. 220 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="tomato" value="0" min = "0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageVeges/cauliflower.png" alt="cauliflower" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Cauliflower <br> Rs. 469 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="cauliflower" value="0" min = "0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
             </div>
-        </form>
+        </div>
+
+        <div class="prods" id="dairy">
+            <p class="prod_title">Dairy Produce</p>
+            <div class="scroll">
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageDairy/milk.png" alt="milk" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Milk <br> Rs. 750</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="milk" value="0" min="0" placeholder="kg"> 
+                            <p>qty</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageDairy/choccimilk.png" alt="eggplant" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Chocci Milk <br> Rs. 890</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="choccimilk" value="0" min="0" placeholder="kg"> 
+                            <p>qty</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageDairy/cheddarcheese.png" alt="cheddarcheese" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Cheddar Cheese <br> Rs. 2600</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="cheddar" value="0" min="0" placeholder="kg"> 
+                            <p>qty</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageDairy/greekyoghurt.png" alt="greekyoghurt" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Greek Yorgurt <br> Rs. 3700</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="greekyoghurt" value="0" min = "0" placeholder="kg"> 
+                            <p>qty</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageDairy/icecream.png" alt="icecream" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Ice Cream <br> Rs. 750</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="icecream" value="0" min = "0" placeholder="kg"> 
+                            <p>qty</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageDairy/casein.png" alt="caseinProtein" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Casein Protein Powder <br> Rs. 6969.69</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="caseinprotein" value="0" min = "0" placeholder="kg"> 
+                            <p>qty</p>
+                        </div> 
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="prods" id="meat">
+            <p class="prod_title">Meat & Seafood</p>
+            <div class="scroll">
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageMeat/chicken.png" alt="chicken" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Chicken <br> Rs. 1500 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="chicken" value="0" min="0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageMeat/skinless.png" alt="skinlesschicken" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Skinless Chicken <br> Rs. 2500 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="skinlesschicken" value="0" min="0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageMeat/beef.png" alt="beef" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Beef Tenderloins <br> Rs. 5650 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="beef" value="0" min="0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageMeat/barramundi.png" alt="barramundi" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Barramundi <br> Rs. 1250 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="barramundi" value="0" min = "0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageMeat/halibut.png" alt="halibut" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Halibut <br> Rs. 1650 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="halibut" value="0" min = "0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageMeat/tuna.png" alt="tuna" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Tuna <br> Rs. 1450 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="tuna" value="0" min = "0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="prods" id="cooking">
+            <p class="prod_title">Baking & Cooking Ingredients</p>
+            <div class="scroll">
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageBaking/flour.png" alt="flour" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">All-Purpose Flour <br> Rs. 450 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="flour" value="0" min="0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageBaking/chocolate.png" alt="chocolatebakingchips" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Chocolate Baking Chips <br> Rs. 1250 per kg</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="chocolatechips" value="0" min="0" placeholder="kg"> 
+                            <p>kg</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageBaking/sprinkles.png" alt="sprinkles" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Rainbow Sprinkles <br> Rs. 250</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="sprinkles" value="0" min="0" placeholder="kg"> 
+                            <p>qty</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageBaking/vanilla.png" alt="vanillaessense" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Vanilla Essence <br> Rs. 1000.69</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="vanilla" value="0" min = "0" placeholder="kg"> 
+                            <p>qty</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageBaking/oregano.png" alt="oregano" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Oregano <br> Rs. 690</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="oregano" value="0" min = "0" placeholder="kg"> 
+                            <p>qty</p>
+                        </div> 
+                    </div>  
+                </div>
+                <div class="item_card">
+                    <img src="images/orderPage/orderPageBaking/oliveoil.png" alt="oliveoil" class="display_img">
+                    <div class="thingys">
+                        <p class="order_item">Olive Oil <br> Rs. 1699</p><br>
+                        <div class="bottom_B">
+                            <input type="number" class="qinp" id="oliveoil" value="0" min = "0" placeholder="kg"> 
+                            <p>qty</p>
+                        </div> 
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="table_mom">
+            <div>
+                <button class="fav" id="favBTN" type="button"><img src="images/Icons/order page/favourite.svg" alt="favouritebutton" title="add to favourites"><p>Add items to favourites</p></button>
+                <button class="adder" id="plusBTN"><img src="images/Icons/order page/shopping_bag.svg" alt="plus_icon" title="add to cart"><p>Add items to cart</p></button> 
+            </div>
+            
+            <table class="order_table">
+                <thead>
+                    <tr>
+                        <th id="l">Order Number</th>
+                        <th>Item</th>
+                        <th>Quantity/Weight(KG)</th>
+                        <th id="r">Price</th>
+                    </tr>
+                </thead>
+
+                <tbody id="orders">
+                    <!-- The place to put all the order items from the JS script -->
+                </tbody>
+                
+                <tfoot>
+                    <tr id="total_row">
+                        <td colspan="3">Total</td>
+                        <td id="totalPrice">0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button id="pull" type="button" class="">Apply Favourites</button>
+                        </td>
+                        <td>
+                            <button class="res" id="reset" type="button">Reset Cart</button>
+                        </td>
+
+                    </tr>
+                </tfoot>
+            </table>
+            <button class="fav" type="button"><p>Proceed to Checkout</p></button><br>
+        </div>
     </main>
+
     <footer>
         <div class="bottom_feet">
             <div class="icons">
@@ -200,5 +438,8 @@
             <p>&copy; Grocies Supermarket</p>
         </div>
     </footer>
+    <script src="scripts/orderNowPage.js">
+        
+    </script>
 </body>
 </html>

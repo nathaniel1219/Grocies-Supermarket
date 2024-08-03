@@ -177,8 +177,8 @@ header{
     .image1 h1{
         font-size: 2em;
         text-align: center;
-    font-family: "Luckiest Guy", cursive;
-    font-weight: 200;
+        font-family: "Luckiest Guy", cursive;
+        font-weight: 200;
         color: #001F3F;
     }
     .image1 div {

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#001F3F">
+    <link rel="stylesheet" href="styles/checkoutPage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <title>Grocies Supermarket</title>
+</head>
+<body>
+    <header>
+
+        <div class="head">
+            <a href="index.htm" class="logo">Grocies <br> Supermarket </a>
+            <nav>
+                <input type="checkbox" id="Sidebar_Active">
+                <label for="Sidebar_Active" class="open_sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </label>
+                <div  class="navigation_links">
+                    <label for="Sidebar_Active" class="close_sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><rect fill="none" height="32" width="32"/><path d="M22,3.41l-5.29,5.29L20,12h-8V4l3.29,3.29L20.59,2L22,3.41z M3.41,22l5.29-5.29L12,20v-8H4l3.29,3.29L2,20.59L3.41,22z"/></svg>
+                    </label>
+                    <!-- <a href="#">Browse</a> -->
+                    <a href="loyaltypage.html">Loyalty</a>
+                    <a href="aboutUsPage.html">About Us</a>
+                    <a href="signInPage.html" id="sign_in">Sign In</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="mini-nav">
+            <a href="index.htm">Home</a>
+            <div class="dropdown">
+                <a href="#" class="drop">Categories</a>
+                <div class="dropdown-content">
+                    <a href="vegepage.html">Vegetables</a>
+                    <a href="dairyPage.html">Dairy Products</a>
+                    <a href="cosSkinPage.html">Cosmetics & Skincare</a>
+                </div>
+            </div> 
+            <!-- <a href="#">Cart</a> -->
+            <a href="orderPage.html">Order</a>
+        </div>
+
+    </header>
+    <main>
+        <h1 class="title">Checkout From Grocies Supermarket</h1>
+        <form>
+            <div class="col1">
+                <div class="inputs">
+                    <div class="addy">
+                        <label for="sadd">Shipping Address:</label>
+                        <textarea name="sadd" id="sadd"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="mname">Name:</label>
+                        <input type="text" id="name" class="tbox">
+                    </div>
+
+                    <div>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" class="tbox">
+                    </div>
+                </div>
+                <div class="inputs1">
+
+                    <div class="f">
+                        <label for="payment">Payment Medium: </label>
+                        <div class="t" >
+                            <div class="m">
+                                <p>Cash</p>
+                                <input type="radio" name="payment" id="COD">
+                            </div>
+                            <div class="m">
+                                <p>Card</p>
+                                <input type="radio" name="payment" id="Card">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="f">
+                        <label for="cnum">Card Number:</label>
+                        <input type="number" id="cnum" class="tbox" placeholder="XXXX-XXXX-XXXX-XXXX" >
+                    </div>
+
+                    <div class="f">
+                        <label for="cnum">Card Number:</label>
+                        <div class="t">
+                        <select name="month" id="month" >
+                            <option value="01">January (01)</option>
+                            <option value="02">February (02)</option>
+                            <option value="03">March (03)</option>
+                            <option value="04">April (04)</option>
+                            <option value="05">May (05)</option>
+                            <option value="06">June (06)</option>
+                            <option value="07">July (07)</option>
+                            <option value="08">August (08)</option>
+                            <option value="09">September (09)</option>
+                            <option value="10">October (10)</option>
+                            <option value="11">November (11)</option>
+                            <option value="12">December (12)</option>
+                        </select>
+                        <select name="year" id="year">
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                            <option value="2033">2033</option>
+                            <option value="2034">2034</option>
+                            <option value="2035">2035</option>
+                            <option value="2036">2036</option>
+                            <option value="2037">2037</option>
+                            <option value="2038">2038</option>
+                            <option value="2039">2039</option>
+                            <option value="2040">2040</option>
+                            <option value="2041">2041</option>
+                            <option value="2042">2042</option>
+                            <option value="2043">2043</option>
+                            <option value="2044">2044</option>
+                            <option value="2045">2045</option>
+                            <option value="2046">2046</option>
+                            <option value="2047">2047</option>
+                            <option value="2048">2048</option>
+                            <option value="2049">2049</option>
+                            <option value="2050">2050</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="f">
+                        <label for="lname">CVV:</label>
+                        <input type="number" id="lname" class="tbox" placeholder="XXX">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col2">
+                <div class="summary">
+                    
+                    <div class="item">
+                        <div class="row">
+                            <h2>Pay now</h2>
+                        </div>
+
+                        <div class="row">
+                            <span>Subtotal</span>
+                            <span>Rs. 150.0</span>
+                        </div>
+
+                        <div class="row">
+                            <span>Total shipping</span>
+                            <span>Rs. 500.0</span>
+                        </div>
+
+                        <div class="row">
+                            <span>Total taxes</span>
+                            <span>Rs. 20.0</span>
+                        </div>
+
+                        <div class="row" id="total">
+                            <span>Total</span>
+                            <span class="amount">Rs. 670.0</span>
+                        </div>
+
+                        <div id="pay">
+                            <input type="submit" value="Pay Now">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="bottom_feet">
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/nathaniel-perera-624746281/"><img src="images/Icons/BOTTOM_NAV/linkedin.png" alt="linkedin"></a><!-- <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a> -->
+                <a href="https://www.instagram.com/nathanielsleeps/"><img src="images/Icons/BOTTOM_NAV/instagram.png" alt="instagram"></a><!-- <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Grow studio - Flaticon</a> -->
+            </div>
+            <div class="notes">
+                <a href="notes/Privacy Policy for Grocies Supermarket.pdf">Privacy Policy</a>
+                <p>|</p>
+                <a href="notes/Terms and Conditions for Grocies Supermarket.pdf">Terms & Conditions</a>
+            </div>
+            <p>&copy; Grocies Supermarket</p>
+        </div>
+    </footer>
+</body>
+</html>
