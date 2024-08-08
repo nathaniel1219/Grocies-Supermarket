@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: medium;
@@ -138,7 +137,7 @@ header{
         display: flex;
         flex-wrap: wrap;
     }
-    .notes a,.notes p{
+    .notes a, .notes p{
         text-decoration: none;
         color: white;
         margin-right: 7px;
@@ -255,11 +254,11 @@ header{
 
 .f{
     background-color: white;
-    color: white;
     margin: 30px;
     border-radius: 10px;
 }
 .form{
+    color: white;
     background-color: #001F3F;
     margin: 20px;
     border-radius: 10px;
@@ -314,7 +313,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 20px;
 }
 .final div p{
-    margin: left 5px;
+    margin-left:  5px;
 }
 .final div a{
     color: white;
