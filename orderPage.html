@@ -28,7 +28,7 @@
                     <!-- <a href="#">Browse</a> -->
                     <a href="loyaltypage.html">Loyalty</a>
                     <a href="aboutUsPage.html">About Us</a>
-                    <a href="signInPage.html" id="sign_in">Sign In</a>
+                    <!-- <a href="signInPage.html" id="sign_in">Sign In</a> -->
                 </div>
             </nav>
         </div>
@@ -49,7 +49,19 @@
 
     </header>
     <main>
-        <h1 class="title">Order From Grocies Supermarket</h1> <!-- Customize this h1 to flip with some info when hovered over -->
+        <h1 class="title">
+            <div class="front">
+                Order From Grocies Supermarket
+            </div>
+            <div class="back">
+                <ul>
+                    <li>Please enter the weight or quantity of each item you wish to add.</li>
+                    <li>Press add items to cart if you wish to put it in the cart table.</li>
+                    <li>Press add items to favorites if you wish to store it in favorites for later.</li>
+                </ul>
+            </div>
+        </h1>
+        
 
         <div class="prods" id="fruits">
             <p class="prod_title">Fresh Fruits</p>
@@ -202,7 +214,7 @@
                     <div class="thingys">
                         <p class="order_item">Chocci Milk <br> Rs. 890</p><br>
                         <div class="bottom_B">
-                            <input type="number" class="qinp" id="choccimilk" value="0" min="0" placeholder="kg"> 
+                            <input type="number" class="qinp" id="chocolate-milk" value="0" min="0" placeholder="kg"> 
                             <p>qty</p>
                         </div> 
                     </div>  
@@ -212,7 +224,7 @@
                     <div class="thingys">
                         <p class="order_item">Cheddar Cheese <br> Rs. 2600</p><br>
                         <div class="bottom_B">
-                            <input type="number" class="qinp" id="cheddar" value="0" min="0" placeholder="kg"> 
+                            <input type="number" class="qinp" id="cheddar-cheese" value="0" min="0" placeholder="kg"> 
                             <p>qty</p>
                         </div> 
                     </div>  
@@ -222,7 +234,7 @@
                     <div class="thingys">
                         <p class="order_item">Greek Yorgurt <br> Rs. 3700</p><br>
                         <div class="bottom_B">
-                            <input type="number" class="qinp" id="greekyoghurt" value="0" min = "0" placeholder="kg"> 
+                            <input type="number" class="qinp" id="greek-yoghurt" value="0" min = "0" placeholder="kg"> 
                             <p>qty</p>
                         </div> 
                     </div>  
@@ -232,7 +244,7 @@
                     <div class="thingys">
                         <p class="order_item">Ice Cream <br> Rs. 750</p><br>
                         <div class="bottom_B">
-                            <input type="number" class="qinp" id="icecream" value="0" min = "0" placeholder="kg"> 
+                            <input type="number" class="qinp" id="ice-cream" value="0" min = "0" placeholder="kg"> 
                             <p>qty</p>
                         </div> 
                     </div>  
@@ -242,7 +254,7 @@
                     <div class="thingys">
                         <p class="order_item">Casein Protein Powder <br> Rs. 6969.69</p><br>
                         <div class="bottom_B">
-                            <input type="number" class="qinp" id="caseinprotein" value="0" min = "0" placeholder="kg"> 
+                            <input type="number" class="qinp" id="casein-protein" value="0" min = "0" placeholder="kg"> 
                             <p>qty</p>
                         </div> 
                     </div>  
@@ -268,7 +280,7 @@
                     <div class="thingys">
                         <p class="order_item">Skinless Chicken <br> Rs. 2500 per kg</p><br>
                         <div class="bottom_B">
-                            <input type="number" class="qinp" id="skinlesschicken" value="0" min="0" placeholder="kg"> 
+                            <input type="number" class="qinp" id="skinless-chicken" value="0" min="0" placeholder="kg"> 
                             <p>kg</p>
                         </div> 
                     </div>  
@@ -334,7 +346,7 @@
                     <div class="thingys">
                         <p class="order_item">Chocolate Baking Chips <br> Rs. 1250 per kg</p><br>
                         <div class="bottom_B">
-                            <input type="number" class="qinp" id="chocolatechips" value="0" min="0" placeholder="kg"> 
+                            <input type="number" class="qinp" id="chocolate-chips" value="0" min="0" placeholder="kg"> 
                             <p>kg</p>
                         </div> 
                     </div>  
@@ -374,7 +386,7 @@
                     <div class="thingys">
                         <p class="order_item">Olive Oil <br> Rs. 1699</p><br>
                         <div class="bottom_B">
-                            <input type="number" class="qinp" id="oliveoil" value="0" min = "0" placeholder="kg"> 
+                            <input type="number" class="qinp" id="olive-oil" value="0" min = "0" placeholder="kg"> 
                             <p>qty</p>
                         </div> 
                     </div>  
@@ -420,7 +432,7 @@
                     </tr>
                 </tfoot>
             </table>
-            <button class="fav" type="button"><p>Proceed to Checkout</p></button><br>
+            <button class="fav" type="button" id="pay">Proceed to Checkout</button><br>
         </div>
     </main>
 

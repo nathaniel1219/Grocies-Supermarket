@@ -200,16 +200,64 @@ header{
 
 
 
-    .title{
-        font-family: "Luckiest Guy", cursive;
+    .title {
+        padding: 50px;
+        margin: 40px;
+        color: white;
+        border-radius: 10px;
+        position: relative;
+        perspective: 1000px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .title .front, .title .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 220;
+        border-radius: 10px;
+        backface-visibility: hidden;
+        transition: transform 0.6s;
+    }
+    
+    .title .front {
+        background-color: rgba(39, 35, 85, 0.566);
+        font-family: "Luckiest Guy";
         font-weight: 400;
         font-size: 2em;
-        padding: 20px;
-        margin: 30px;
+    }
+    
+    .title .back {
+        background-color: rgba(39, 35, 85, 0.8);
         color: white;
-        background-color: rgba(39, 35, 85, 0.566);
-        border-radius: 10px;
+        transform: rotateX(180deg);
+        opacity: 0;
+    }
+    
+    .title:hover .front {
+        transform: rotateX(180deg);
+        opacity: 0;
+    }
+    
+    .title:hover .back {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    
+    
+
+
+.prod_title{
+    text-align: left;
+    padding-left: 35px;
+    font-weight: 700;
 }
+
+
+
 
 .scroll{
     display: flex;
@@ -223,7 +271,7 @@ header{
     flex-direction: column;
     justify-content: flex-end;
     background-color: white;
-    margin: 10px;
+    margin: 11px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -252,7 +300,6 @@ header{
         align-items: center;
         justify-content: center;
         margin: 0px 10px;
-
     }
 
 .display_img{
@@ -303,6 +350,9 @@ header{
         background-color: #001F3F;
         color: white;
     }
+    th{
+        padding: 20px;
+    }
     td{
         margin-bottom: 10px;
         border-bottom: 4px solid #001F3F;
@@ -312,7 +362,7 @@ header{
     .adder, .fav, .res{
         cursor: pointer;
         border: none;
-        padding: 10px;
+        padding: 8px;
         background-color: #001F3F;
         color: white;
         transition: transform 0.3s ease-in-out;
@@ -328,3 +378,25 @@ header{
             background-color: #023f7d;
             transition: 0.6s ease; 
         }
+
+
+
+@media (max-width: 485px) {
+    .title .front {
+        font-weight: 200;
+        font-size: 1.5em;
+    }
+    .display_img{
+        width: 190px;
+    }
+    table{
+        width: 100%;                                                                                       
+    }
+
+    th{
+        padding: 5px;
+    }
+    td{
+        padding: 4px;
+    }
+}

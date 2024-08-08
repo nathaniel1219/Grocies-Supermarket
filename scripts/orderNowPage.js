@@ -20,16 +20,16 @@ const items = [
     {
         //Dairy
         "milk": 750,
-        "choccimilk": 890,
-        "cheddar": 2600,
-        "greekyoghurt": 3700,
-        "icecream": 750,
-        "caseinprotein": 6969.69
+        "chocolate-milk": 890,
+        "cheddar-cheese": 2600,
+        "greek-yoghurt": 3700,
+        "ice-cream": 750,
+        "casein-protein": 6969.69
     },
     {
         //Meat
         "chicken": 1500,
-        "skinlesschicken": 2500,
+        "skinless-chicken": 2500,
         "beef": 5650,
         "barramundi": 1250,
         "halibut": 1650,
@@ -38,14 +38,15 @@ const items = [
     {
         //Baking
         "flour": 450,
-        "chocolatechips": 1250,
+        "chocolate-chips": 1250,
         "sprinkles": 250,
         "vanilla": 1000.69,
         "oregano": 690,
-        "oliveoil": 1699
+        "olive-oil": 1699
     }
 ];
 
+// function to put items to the cart
 function putIntoCart() {
     let total = 0;
     let itemNum = 1;
@@ -72,11 +73,12 @@ function putIntoCart() {
             }
         }
     }
-
+    localStorage.setItem('checkoutCart', JSON.stringify(checkoutCart)); 
     orders.innerHTML = addToCart;
     totalPrice.innerText = total;
 }
 
+// function to add items to the favourites list
 function addToFavorites() {
     let favorites = {};
     for (let i = 0; i < items.length; i++) {
@@ -91,6 +93,7 @@ function addToFavorites() {
     localStorage.setItem('favorites', JSON.stringify(favorites));
 }
 
+// function to put favourites to cart
 function pullFavorites() {
     let favorites = JSON.parse(localStorage.getItem('favorites'));
     if (favorites) {
@@ -102,6 +105,24 @@ function pullFavorites() {
         putIntoCart();
     }
 }
+
+// function to see if the cart has items
+function payValidation(){
+    let checkoutCart = JSON.parse(localStorage.getItem('checkoutCart'));
+    if (!checkoutCart || checkoutCart.length == 0){
+        alert('The cart cannot be empty');
+    } else {
+        window.location.href = "../checkoutPage.html";
+    }
+}
+ 
+// function to reset the order table 
+let resetBtn = document.getElementById('reset');
+resetBtn.addEventListener('click', function(){
+    let orders = document.getElementById('orders');
+    orders.innerHTML = '';
+    localStorage.removeItem('checkoutCart');
+});
 
 // Add event listeners to all add buttons 
 function setupEventListeners() {
@@ -117,13 +138,9 @@ function setupEventListeners() {
     document.getElementById('pull').addEventListener('click', pullFavorites);
 
     //Button to proceed to the checkout page
+    payBTN = document.getElementById('pay');
+    payBTN.addEventListener('click', payValidation);
 }
 
-// Run setupEventListeners after the DOM is fully loaded 
-window.onload = setupEventListeners;
-
-// function to reset the order table 
-let resetBtn = document.getElementById('reset');
-resetBtn.addEventListener('click', function(){
-    location.reload();
-});
+setupEventListeners();
+window.onload = localStorage.removeItem('checkoutCart');
