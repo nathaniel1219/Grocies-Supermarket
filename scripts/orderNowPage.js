@@ -119,6 +119,7 @@ resetBtn.addEventListener('click', function(){
     let orders = document.getElementById('orders');
     orders.innerHTML = '';
     localStorage.removeItem('checkoutCart');
+    totalPrice.innerText = 0;
 });
 
 
