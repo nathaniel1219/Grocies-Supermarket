@@ -18,8 +18,8 @@ function loadCheckoutCart() {
             checkoutItems.innerHTML += row; // putting each item to the cart table
         });
     }
-    let tax_value = total * 15 / 100; 
-    tax.innerText = ' + Rs.' + Math.round(tax_value); 
+    let tax_value = Math.round((total * 15 / 100)*10)/10; 
+    tax.innerText = ' + Rs.' + tax_value; 
     grossTotal.innerText = 'Rs.' + total; 
     checkoutTotal.innerText = 'Rs.' + (total + tax_value + 500);
     pullCardDetails(); 
@@ -82,10 +82,6 @@ function paymentDone() {
     let deliveryDate = new Date(); 
     deliveryDate.setDate(today.getDate() + 4); 
 
-    /* // Format delivery date
-    let options = { year: 'numeric', month: 'long', day: 'numeric' };
-    let formattedDate = deliveryDate.toLocaleDateString('en-US', options); */
-
     // Display thank you message and styling
     stuffs.innerText = `Thank you ${name} for the order.\nThe order will be delivered to ${addy} by ${deliveryDate}`; 
     stuffs.style.margin = '250px 25px';
@@ -94,8 +90,9 @@ function paymentDone() {
     stuffs.style.color = 'white';
 }
 
+// Add event listener to the pay button
 let payBTN = document.getElementById('pay');
-payBTN.addEventListener('click', paymentDone); // Add event listener to the pay button
+payBTN.addEventListener('click', paymentDone); 
 
 const codRadio = document.getElementById('COD');
 const cardRadio = document.getElementById('Card');

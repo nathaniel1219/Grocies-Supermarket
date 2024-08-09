@@ -90,23 +90,39 @@ function addToFavorites() {
             }
         }
     }
+    if (Object.keys(favorites).length !== 0){
+        alert('Items added to favorites');
+    } else {
+        alert('Favorites has been cleared');
+    }
     localStorage.setItem('favorites', JSON.stringify(favorites));
 }
 
 // function to put favourites to cart
 function pullFavorites() {
     let favorites = JSON.parse(localStorage.getItem('favorites'));
-    if (favorites) {
+    if (Object.keys(favorites).length !== 0) {
         for (let key in favorites) {
             if (document.getElementById(key)) {
                 document.getElementById(key).value = favorites[key];
             }
         }
         putIntoCart();
+    } else {
+        alert('There are no items in favorites');
     }
 }
 
-// function to see if the cart has items
+// function to reset the order table 
+let resetBtn = document.getElementById('reset');
+resetBtn.addEventListener('click', function(){
+    let orders = document.getElementById('orders');
+    orders.innerHTML = '';
+    localStorage.removeItem('checkoutCart');
+});
+
+
+// function to see if the cart has items and go to the checkout page
 function payValidation(){
     let checkoutCart = JSON.parse(localStorage.getItem('checkoutCart'));
     if (!checkoutCart || checkoutCart.length == 0){
@@ -116,17 +132,11 @@ function payValidation(){
         window.location.href = "./checkoutPage.html";
     }
 }
- 
-// function to reset the order table 
-let resetBtn = document.getElementById('reset');
-resetBtn.addEventListener('click', function(){
-    let orders = document.getElementById('orders');
-    orders.innerHTML = '';
-    localStorage.removeItem('checkoutCart');
-});
 
-// Add event listeners to all add buttons 
+
+// Add event listeners to all buttons 
 function setupEventListeners() {
+
     //Add to cart button
     let plusBTN = document.getElementById('plusBTN');
     plusBTN.addEventListener('click', putIntoCart);
@@ -141,7 +151,12 @@ function setupEventListeners() {
     //Button to proceed to the checkout page
     payBTN = document.getElementById('pay');
     payBTN.addEventListener('click', payValidation);
+
 }
 
-setupEventListeners();
-window.onload = localStorage.removeItem('checkoutCart');
+window.onload = function() {
+    setupEventListeners();
+    localStorage.removeItem('checkoutCart');
+};
+
+
