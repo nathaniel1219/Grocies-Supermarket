@@ -112,7 +112,8 @@ function payValidation(){
     if (!checkoutCart || checkoutCart.length == 0){
         alert('The cart cannot be empty');
     } else {
-        window.location.href = "/checkoutPage.html";
+        console.log('Navigating to checkout page');
+        window.location.href = "./checkoutPage.html";
     }
 }
  
